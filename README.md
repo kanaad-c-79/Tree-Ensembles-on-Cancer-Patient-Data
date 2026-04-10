@@ -35,5 +35,8 @@ Again, like the previous two methods, we defined this AdaBoost Classifier, which
 Out of the three methods we looked at, Random Forest was the best model, as this was the one that performed the best/had the best prediction accuracy on the validation set.
 
 # Selecting the most Important Features
+Feature selection helps us identify the most important features of our dataset that contribute to a decision tree/tree ensemble, thus helping us remove any irrelevant predictors. The two methods we'll be looking at are: 1) Impurity metric approaches, and 2) Permutation Importances.
+
+## Impurity metric approach
 
 
