@@ -38,5 +38,9 @@ Out of the three methods we looked at, Random Forest was the best model, as this
 Feature selection helps us identify the most important features of our dataset that contribute to a decision tree/tree ensemble, thus helping us remove any irrelevant predictors. The two methods we'll be looking at are: 1) Impurity metric approaches, and 2) Permutation Importances.
 
 ## Impurity metric approach
+We used the '.feature_importances_' function on our best classifier (Random Forest) to get the inbuilt impurity metric measure for each feature in our dataset. 
 
+When making the ensemble of decision trees used in our RF classifier, the features that tend to reduce impurity most in nodes (and thus help in leading to a decision/have the most ~predictive power) when we split trees using them - are deemed as our most important measures, while the features that have the least impact on impurity are deemed less important. 
+
+## Permutation Importance approach
 
