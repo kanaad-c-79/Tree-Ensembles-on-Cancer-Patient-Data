@@ -7,3 +7,4 @@ Implemented Important Elements of tree ensembles, such as:
 3) Boosting/AdaBoost (Adaptive Boosting) - Sequential Learning
 4) Feature Importance (for model accuracy/predictive performance) Methods
 
+# Background Context
