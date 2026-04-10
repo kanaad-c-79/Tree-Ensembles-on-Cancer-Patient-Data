@@ -13,10 +13,16 @@ We worked with a Dataset of Colon Cancer Patients, including fields/variables/pr
 We encoded the categorical fields/values from this dataset into numerical ones, and then we reordered the columns/fields and converted this Dataframe into an array. We then shuffled this array. We then Divided this (shuffled) array, ‘Xy’ into two arrays: 1) ‘X’, a 2D array containing all the predictors, and 2) ‘y’, a 1D array with the response/target. We then Split both these arrays into – 50% training data, 25% validation data, 25% test data.
 
 # Fitting a Single Decision Tree
-We fit decision trees with different depths up to max_depth = 15. These decision trees were trained on/learnt from our training data. We then saw how this (trained) decision tree performed/its accuracy on - both the training set and the validation set - for each different depth (1-15). -> We then took the best max_depth for our decision tree, which was the max_depth for which the decison tree had the best performance/accuracy on the validation set. 
+We fit decision trees with different depths up to max_depth = 15. These different decision trees were trained on/learnt from our training data. We then saw how this (trained) decision tree performed/its accuracy on - both the training set and the validation set - for each different depth (1-15). -> We then took the best max_depth for our decision tree, which was the max_depth for which the decison tree had the best performance/accuracy on the validation set. 
 
 # Random Forest Classifier
+We defined a Random Forest Classifier, which was also trained on/learnt from our training data. With default parameters, we then saw how this (trained) RF Classifier performed/its accuracy on - both the training set and the validation set. 
 
+(In random forest classifiers, the algorithm only considers a subset of the features at each split. This is controlled using the max_features argument. Normally this subset size is set to the square root of the total number of features.) 
+
+However, here we played around with the max_features argument, setting it equal to both 'sqrt' (default in sklearn) and 'None'. (When max_features = None the algorithm is using all the features at every split, like a standard decision tree.) 
+
+As suspected, the RF model with max_features = "sqrt" performed the best, as only a subset (the square root of the total number of features) of the features in considered at each split, and at every subset this subset of different features is random, hence reducing the correlation between trees and giving more reliable averages.
 
 # AdaBoost Classifier
 
