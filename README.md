@@ -24,11 +24,15 @@ However, here we played around with the max_features argument, setting it equal 
 
 As suspected, the RF model with max_features = "sqrt" performed the best, as only a subset (the square root of the total number of features) of the features in considered at each split, and at every subset this subset of different features is random, hence reducing the correlation between trees and giving more reliable averages.
 
-# AdaBoost Classifier
+..........
 
+# AdaBoost Classifier
+(AdaBoost Classifier is a Boosting algorithm. Boosting also uses ensembles of trees, but instead of training the trees 'independently' on bootstrapped datasets like in bagging, it trains the trees 'sequentially' with each new tree learning from errors of previous trees.) 
+
+Again, like the previous two methods, we defined this AdaBoost Classifier, which learnt from our training data. We then computed how this trained classifier performed/its accuracy on both the training set and the validation set. 
 
 # Choosing the Best Classifier - and retraining it using all the samples - and testing on a test set:
-
+Out of the three methods we looked at, Random Forest was the best model, as this was the one that performed the best/had the best prediction accuracy on the validation set.
 
 # Selecting the most Important Features
 
