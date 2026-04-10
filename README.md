@@ -43,4 +43,6 @@ We used the '.feature_importances_' function on our best classifier (Random Fore
 When making the ensemble of decision trees used in our RF classifier, the features that tend to reduce impurity most in nodes (and thus help in leading to a decision/have the most ~predictive power) when we split trees using them - are deemed as our most important measures, while the features that have the least impact on impurity are deemed less important. 
 
 ## Permutation Importance approach
+Permutation importance measures how much the Random Forest model’s performance drops when you randomly shuffle (permute) one feature. -> If the model's performance drops significantly after shuffling/permuting a given feature, this indicates that this feature is important/plays a big part in the model's predictive performance, because changing the order/permuting it even slightly can have such a big impact on performance, hence showing the feature contributes heavily to the model's performance. -> Similarly, if shuffling another feature has minimal impact on the model's performance, this indicates that this feature does not have much influence on the model's performance. 
 
+.....
