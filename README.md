@@ -14,3 +14,10 @@ We encoded the categorical fields/values from this dataset into numerical ones, 
 
 # Fitting a Single Decision Tree
 
+# Random Forest Classifier
+
+# AdaBoost Classifier
+
+# Choosing the Best Classifier - and retraining it using all the samples - and testing on a test set:
+
+
